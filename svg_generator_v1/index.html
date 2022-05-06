@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SVG</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-    <div id="midcontentadcontainer">
-
-    </div>
+  <body style="padding: 32px">
+    <h1 style="color: #1ebe96">SVG</h1>
+    <div id="midcontentadcontainer"></div>
     <div id="form">
-        <input type="number" placeholder="Cutof Value" id="inputCutofValue">
-        <input type="number" placeholder="Value" id="inputValue">
-        <input type="number" placeholder="Limite Superior" id="inputLimiteSuperior">
-        <input type="number" placeholder="Tamanio del Intervalo" id="inputIntervalo">
-        <button id="btnGenerate">Generate</button>
+      <label for="">Cutoff value</label>
+      <input
+        type="number"
+        placeholder="Cutof Value"
+        id="inputCutofValue"
+        value="30"
+      /><br />
+      <label for="">Value</label>
+      <input
+        type="number"
+        placeholder="Value"
+        id="inputValue"
+        value="66"
+      /><br />
+      <label for="">Upper limit</label>
+      <input
+        type="number"
+        placeholder="Limite Superior"
+        id="inputLimiteSuperior"
+        value="50"
+      /><br />
+      <label for="">Interval size</label>
+      <input
+        type="number"
+        placeholder="Tamanio del Intervalo"
+        id="inputIntervalo"
+        value="10"
+      /><br />
+      <button id="btnGenerate" style="margin-top: 10px">Generate</button>
     </div>
-    <div>
-        <button id="btnBasic">Basic</button>
-        <button id="btnExampleOne">ExampleOne</button>
-        <button id="btnExampleTwo">ExampleTwo</button>
-        <button id="btnExampleThree">ExampleThree</button>
+    <div style="padding-top: 32px; padding-bottom: 32px">
+      <button id="btnBasic">Basic</button>
+      <button id="btnExampleOne">ExampleOne</button>
+      <button id="btnExampleTwo">ExampleTwo</button>
+      <button id="btnExampleThree">ExampleThree</button>
     </div>
+    <h2 style="color: #1ebe96">SVG String</h2>
+    <div
+      id="svg_string"
+      style="
+        background: #f4f4f4;
+        border: 1px solid #ddd;
+        border-left: 3px solid #63799b;
+        color: #666;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: 1em 1.5em;
+        display: block;
+        word-wrap: break-word;
+      "
+    ></div>
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
